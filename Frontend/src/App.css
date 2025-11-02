@@ -1,0 +1,52 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body,#root{
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  padding:0.7rem;
+  display: flex;
+  gap:0.7rem;
+}
+
+main .left , main .right{
+  height: 100% ;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left .reviewButton{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: tomato;
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+main .left {
+  position: relative;
+}
+
+.left .code , .code pre   , .code pre code {
+  height: 100%;
+  width: 100%;
+  margin : 0;
+  border-radius: 0.7rem;}
+
+main .right {
+  padding:1rem 2rem;
+  background-color: darkslateblue;
+  overflow: auto;
+}
